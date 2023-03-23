@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Citações</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;;
+            padding: 0%;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            background-image: url(background.jpg);
+            width: 100vw;
+            min-height: 100%;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 20px;
+        }
+        #card-div {
+            height: 300px;
+            width: 500px;
+            border: 2px solid black;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 10px;
+            align-items: center;
+            gap: 15px;
+            border-radius: 15px;
+            box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.68);
+        }
+        .header {
+            background-color: yellow;
+            padding: 20px;
+            border-radius: 25px;
+        }
+        .card-list {
+            width: 90%;
+            font-size: 23px;
+            text-align: center;
+            gap: 10px;
+        }
+        .autor1{
+            font-weight: bolder;
+        }
+        span {
+            font-size: 120px;
+            height: 100px;
+        }
+
+        
+        #card-btn {
+            height: 50px;
+            width: 160px;
+            background-color: black;
+            color: aliceblue;
+            font-size: 23px;
+            
+        }
+        #card-btn:hover {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <h1 id="card-tittle">Gerador de Citações JavaScript</h1>
+        </div>
+        <div id="card-div">
+        <div class="card-list">
+                <p class="text1">Clique para gerar uma nova citação!!!</p>
+                <p class="autor1"><span id="seta">&#11015</span></p>
+        </div>
+        </div>
+        <button id="card-btn">Nova Citação</button>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
