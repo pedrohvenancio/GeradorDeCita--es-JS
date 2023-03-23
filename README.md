@@ -1,2 +1,2 @@
-# GeradorDeCita--es-JS
+# GeradorDeCitaçõs-JS
 Material de estudos para manipulação do DOM.
